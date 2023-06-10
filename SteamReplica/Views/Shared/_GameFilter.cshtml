@@ -1,0 +1,10 @@
+﻿@model List<NLayer.Core.ResponseDTOs.GenreDisplayResponse>
+
+<div style="text-align: center">
+	<a asp-controller="Game" asp-action="Index" class="btn btn-light" style="margin-left: 10px;">All</a>
+	@foreach (var genre in Model)
+	{
+		<a asp-controller="Game" asp-action="Index" asp-route-genreId="@genre.Id" class="btn btn-light" style="margin-left: 10px;">@genre.Name</a>
+	}
+
+</div>

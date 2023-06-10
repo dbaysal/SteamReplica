@@ -1,0 +1,21 @@
+﻿@model GameDisplayModel
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+	<h3 style="color: aliceblue" class="display-4">Games</h3>
+	<br/>
+	
+</div>
+
+<partial name="_GameFilter" model="Model.Genres"/>
+<partial name="_GameDisplay" model="Model.Games" />
+
+
+
+
+
+
+
